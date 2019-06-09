@@ -22,9 +22,7 @@ export class ImagesService {
   getUrl(): void {
     this.configService.getConfig()
       .subscribe((config: Config) => {
-
         this.config = config;
-        console.log(this.config);
       });
   }
 

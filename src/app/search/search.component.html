@@ -1,6 +1,10 @@
 <div>
-<input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Enter your search"/>
+<input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Enter your search" list="search-list"/>
 </div>
+
+<datalist id="search-list">
+  <option *ngFor="let currSearch of prevSearch">{{currSearch}}</option>
+</datalist>
 
 <div class="search-result">
     <img *ngFor="let image of images$ | async" src="https://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.id}}_{{image.secret}}.jpg">

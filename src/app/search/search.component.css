@@ -4,6 +4,11 @@
   margin-bottom: 8px;
 }
 
+select {
+  width: 200px;
+  height: 20px;
+}
+
 .search-result {
   display: flex;
   flex-wrap: wrap;

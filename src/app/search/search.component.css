@@ -1,0 +1,43 @@
+#search-box {
+  width: 200px;
+  height: 20px;
+  margin-bottom: 8px;
+}
+
+.search-result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 4px;
+  margin-top: 8px;
+}
+
+img {
+  flex: 25%;
+  max-width: 25%;
+  padding: 4px 4px;
+}
+
+/* Responsive layout - makes a three column-layout instead of four columns */
+@media (max-width: 1200px) {
+  img {
+    flex: 30%;
+    max-width: 30%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of three columns */
+@media (max-width: 800px) {
+  img {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  img {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

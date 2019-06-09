@@ -1,0 +1,7 @@
+<div>
+<input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Enter your search"/>
+</div>
+
+<div class="search-result">
+    <img *ngFor="let image of images$ | async" src="https://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.id}}_{{image.secret}}.jpg">
+</div>

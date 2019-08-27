@@ -7,7 +7,7 @@ import {Component} from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'Venn\'s Image Gallery';
+  title = 'Sapir\'s Image Gallery';
 
 }
 

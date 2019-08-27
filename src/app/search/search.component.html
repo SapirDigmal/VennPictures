@@ -1,7 +1,18 @@
-<div>
-<input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Enter your search" list="search-list"/>
-</div>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
+<div>
+<div class="container">
+<div class="searchBox">
+	<input #searchInput class="searchInput" id="search-box" type="text" name="" placeholder="Search" 
+	(input)="search(searchInput.value)" list="search-list">
+	<button class="searchButton" href="#">
+	    <i class="material-icons">
+	        search
+	    </i>
+	</button>
+</div>
+</div>
 <datalist id="search-list">
   <option *ngFor="let currSearch of prevSearch">{{currSearch}}</option>
 </datalist>
@@ -9,3 +20,8 @@
 <div class="search-result">
     <img *ngFor="let image of images$ | async" src="https://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.id}}_{{image.secret}}.jpg">
 </div>
+<div>
+
+
+
+ 

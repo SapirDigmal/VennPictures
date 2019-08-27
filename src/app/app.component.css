@@ -1,3 +1,25 @@
 .header {
   text-align:center;
+  font-family: "showcard gothic";
+  color: #990000;
+  font-size: 30px; 
+}
+
+@media screen and (max-width: 1150px) {
+  .header {
+  	font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+  	font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+  .header {
+  	font-size: 18px;
+  }
 }
